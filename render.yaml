@@ -6,10 +6,8 @@ services:
     envVars:
       - key: TAILSCALE_AUTHKEY
         sync: false
-      - key: TAILSCALE_VERSION
-        value: 1.22.0
-      - key: ADVERTISE_ROUTES
-        value: 10.0.0.0/8
+      - key: TAILSCALE_SERVE
+        value: 3000
     disk:
       name: tailscale-state
       mountPath: /var/lib/tailscale
