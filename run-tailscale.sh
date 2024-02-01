@@ -10,6 +10,6 @@ export ALL_PROXY=socks5://localhost:1055/
 tailscale_ip=$(/render/tailscale ip)
 echo "Tailscale is up at IP ${tailscale_ip}"
 
-tailscape serve ${TAILSCALE_SERVE}
+tailscale serve ${TAILSCALE_SERVE}
 
 wait ${PID}
