@@ -1,9 +1,6 @@
 FROM debian:latest
 WORKDIR /render
 
-ARG TAILSCALE_VERSION
-ENV TAILSCALE_VERSION=$TAILSCALE_VERSION
-
 RUN apt-get -qq update \
   && apt-get -qq install --upgrade -y --no-install-recommends \
     apt-transport-https \
